@@ -1,0 +1,197 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #0e0b0b;
+}
+
+.homepage {
+  text-align: center;
+}
+
+/* Navbar */
+.navbar {
+  background-image: url('https://promwad.com/sites/default/files/fpga-for-ia-banner.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 80px; /* Adjusted height */
+  padding: 20px; /* Proper padding */
+  overflow: hidden; /* Ensure no content overflows from the navbar */
+
+  border: 2px solid #3f0127; /* Add a white border */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for a 3D effect */
+}
+
+
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-logo {
+  margin-right: auto; /* Pushes the logo to the right */
+}
+
+.navbar-logo img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+  position: relative; 
+  top: -35px;
+}
+
+
+.navbar-brand {
+  color: #f0be08;
+  font-size: 30px;
+  text-decoration: none;
+  margin-right: auto; /* Moves the brand to the right side */
+  margin-right:1000px; /* Adds 20px spacing on the right side */
+  position: relative; 
+  top: -75px; /* Moves the brand up by 30px */
+}
+
+
+
+.navbar-nav {
+  list-style: none;
+  display: flex;
+  margin-left: auto; /* Pushes the links to the right */
+  position: relative;
+  top: -115px; /* Moves the entire element up by 60px */
+}
+
+.navbar-nav li {
+  margin-left: 30px;
+}
+
+.navbar-nav li a {
+  color: #fbfafb;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav li a:hover {
+  color: #ff9800;
+}
+
+
+/* Hero Section */
+.hero-section {
+  position: relative;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0f0d0d;
+}
+
+.image-slider {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.slideshow-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 1s ease-in-out;
+}
+
+.fade-in {
+  opacity: 1;
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Message Section */
+.message-section {
+  margin: 2px 0;
+}
+
+.static-message h2 {
+  font-size: 28px;
+  color: #080404;
+  font-weight: bold;
+  padding: 20px;
+}
+
+.multi-color {
+  font-weight: bold;
+  animation: colorChange 3s infinite;
+}
+
+/* Color changing animation */
+@keyframes colorChange {
+  0% {
+    color: #ff5733;
+  }
+  25% {
+    color: #33ff57;
+  }
+  50% {
+    color: #3357ff;
+  }
+  75% {
+    color: #fbeb03;
+  }
+  100% {
+    color: #fb8804;
+  }
+}
+
+/* Responsive Styling */
+@media screen and (max-width: 768px) {
+  .navbar .container {
+    flex-direction: column;
+  }
+  
+  .navbar-nav {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+
+  .navbar-nav li {
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+
+  .hero-section {
+    height: 60vh;
+  }
+}
+
+/* Styles for the Upcoming Workshop Button */
+.btn-upcoming-workshop {
+  padding: 10px 15px;
+  background-color: #ff0800;
+  border: none;
+  color: rgb(4, 1, 1);
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-upcoming-workshop:hover {
+  background-color: #8eee07;
+  transition: background-color 0.3s;
+}

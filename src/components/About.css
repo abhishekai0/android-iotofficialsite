@@ -1,0 +1,92 @@
+/* Custom styling for the About Us page */
+
+.about-section {
+  padding: 40px;
+  background-color: #fffdfd;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: black; /* Set text color to black */
+}
+
+.top-right-image {
+  position: absolute;
+  top: -30px;
+  right: 0px;
+}
+
+.club-image {
+  width: 300px;
+  height: 100px;
+  border-radius: 10px;
+}
+
+.club-info {
+  text-align: center;
+  margin-bottom: 40px;
+  color: black; /* Ensure text inside club info is black */
+}
+
+.benefits-list {
+  list-style-type: disc;
+  margin-left: 20px;
+  text-align: left;
+  color: black; /* Set list text color to black */
+}
+
+.team-dropdown {
+  margin-top: 20px;
+  text-align: center;
+}
+
+select {
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.team-member-details {
+  margin-top: 20px;
+  color: black; /* Set team member details text color to black */
+}
+
+.team-photo {
+  width: 150px;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+h4 {
+  margin-bottom: 10px;
+  color: black; /* Ensure all headings are black */
+}
+
+p {
+  font-size: 16px;
+  color: black; /* Ensure all paragraphs are black */
+}
+/* Gallery styling */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}

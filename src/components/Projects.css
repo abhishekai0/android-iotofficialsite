@@ -1,0 +1,60 @@
+.projects-section {
+    position: relative;
+    overflow: hidden;
+    height: 100vh; /* You can adjust this based on how much space you want */
+  }
+  
+  .background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Ensure the video is behind other content */
+  }
+  
+  .container {
+    position: relative;
+    z-index: 1; /* Content appears above the video */
+    color: #f8f5f5c4;
+    padding: 20px;
+  }
+  
+  h2 {
+    margin-top: 0;
+  }
+  
+  /* Grid Layout */
+  .project-grid, .upcoming-project-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two boxes in one row */
+    gap: 30px; /* Adjust the gap between the boxes */
+    padding: 20px 0;
+  }
+  
+  .project-item, .upcoming-project-item {
+    background: rgba(16, 17, 16, 0.6); /* Dark overlay for better visibility of text */
+    padding: 25px; /* Increase padding to make boxes bigger */
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out; /* Add hover effect */
+  }
+  
+  .project-item:hover, .upcoming-project-item:hover {
+    transform: scale(1.05); /* Slightly enlarge the box on hover */
+  }
+  
+  .project-item img, .upcoming-project-item img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px; /* Add space between image and text */
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .project-grid, .upcoming-project-grid {
+      grid-template-columns: 1fr; /* Stack the boxes in a single column on smaller screens */
+    }
+  }
+  

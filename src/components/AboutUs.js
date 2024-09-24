@@ -92,11 +92,11 @@ const AboutUs = () => {
                 <h4>Co-Members</h4>
                 <div className="member-box">
                   
-                  <h4>MANOSMITA BEHARA</h4>
+                  <h4>MONOSMITA BEHARA</h4>
                 </div>
                 <div className="member-box">
                   
-                  <h4>PRIYADARSHNI PATTO</h4>
+                  <h4>PRIYADARSHANI PATRO</h4>
                 </div>
                 <div className="member-box">
                   

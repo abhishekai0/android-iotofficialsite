@@ -85,7 +85,7 @@ const ContactUs = () => {
 
             <div className="footer-links">
               <a href="#about">About Us</a>
-              <a href="#events">Events</a>
+              <a href="https://eventandworkshop.godaddysites.com/">Events</a>
               <a href="#projects">Projects</a>
               <a href="#contact">Contact</a>
             </div>
